@@ -194,7 +194,7 @@ const siteConfig = {
   about: {
     title: "Estrutura técnica com visão de produto",
     description:
-      "atuo na criação de sistemas corporativos sob medida e conta com direção técnica de Matheus Henrique D'Alkmin, tecnólogo em Desenvolvimento de Sistemas pelo COTIL e graduando em Engenharia de Software pela UNINTER.",
+      "atuo na criação de sistemas corporativos sob medida, sou tecnólogo em Desenvolvimento de Sistemas pelo COTIL e estou graduando Engenharia de Software.",
     badges: ["Projetos corporativos", "Visual personalizado", "Foco em operação"],
     education: [
       "Direção técnica de Matheus Henrique D'Alkmin.",
@@ -208,9 +208,7 @@ const siteConfig = {
     ]
   },
   contact: {
-    title: "Fale com o Matheus",
-    description:
-      "WhatsApp direto, abertura rápida no Gmail e briefing guiado para iniciar a conversa com mais contexto.",
+    title: "Fale comigo",
     emailAddress: "matheushdalkmin@gmail.com",
     whatsappNumber: "5519989826251",
     whatsappDisplay: "(19) 98982-6251",
@@ -898,6 +896,15 @@ navLinks.forEach((link) => {
 });
 
 const revealElements = document.querySelectorAll("[data-reveal]");
+
+revealElements.forEach((element, index) => {
+  const siblingIndex = [...element.parentElement.children].filter((child) =>
+    child.hasAttribute("data-reveal")
+  ).indexOf(element);
+  const delayIndex = siblingIndex >= 0 ? siblingIndex : index;
+
+  element.style.setProperty("--reveal-delay", `${Math.min(delayIndex, 5) * 80}ms`);
+});
 
 const revealObserver = new IntersectionObserver(
   (entries) => {
