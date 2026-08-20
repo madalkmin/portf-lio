@@ -161,7 +161,7 @@ export default function Home() {
             kind="Organização pessoal"
             description="Uma experiência digital que reúne planos, rotina e finanças para tornar o caminho mais claro."
             n="01"
-            href="https://vereda-three.vercel.app/"
+            href="https://meuvereda.com/"
             image="projects/vereda.png"
           />
           <Project
