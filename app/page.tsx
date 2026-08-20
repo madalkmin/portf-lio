@@ -49,7 +49,7 @@ export default function Home() {
           <a href="#sobre">Sobre</a>
         </nav>
         <a className="header-link" href={wa} target="_blank" rel="noreferrer">
-          Iniciar projeto <Arrow />
+          Solicitar projeto <Arrow />
         </a>
       </header>
       <section id="inicio" className="wrap hero">
@@ -167,7 +167,7 @@ export default function Home() {
           <Project
             title="VLPRICE"
             kind="Inteligência de preços"
-            description="Uma plataforma criada para transformar a gestão de preços em uma rotina mais rápida e confiável."
+            description="Uma plataforma criada para transformar a gestão de cotações de frete em uma rotina muito mais rápida e confiável."
             n="02"
             href="https://vlprice.com/app"
             image="projects/vlprice.png"
