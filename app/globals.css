@@ -668,20 +668,35 @@ h1 em {
 .sectionhead {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  column-gap: 72px;
+  row-gap: 22px;
   margin-bottom: 61px;
 }
-.sectionhead > p:last-child {
-  max-width: 415px;
+.sectionhead .label {
+  grid-column: 1 / -1;
   margin: 0;
-  font-size: 17px;
-  line-height: 1.45;
+}
+.sectionhead h2 {
+  max-width: 680px;
+  margin: 0;
+  font-size: clamp(38px, 4.15vw, 62px);
+  font-weight: 500;
+  letter-spacing: -0.065em;
+  line-height: 1.02;
+}
+.sectionhead .sectioncopy {
+  max-width: 470px;
+  margin: 0;
+  align-self: end;
+  color: #53534f;
+  font-size: clamp(17px, 1.45vw, 20px);
+  line-height: 1.5;
 }
 .servicelist {
   border-top: 1px solid #aaa8a1;
 }
 .servicelist article {
-  min-height: 158px;
+  min-height: 188px;
   border-bottom: 1px solid #aaa8a1;
   display: grid;
   grid-template-columns: 13% 1fr auto;
@@ -705,6 +720,14 @@ h1 em {
   color: #53534f;
   font-size: 15px;
   line-height: 1.5;
+}
+.servicelist strong {
+  display: block;
+  margin-top: 13px;
+  color: var(--ink);
+  font: 500 11px "DM Mono";
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
 }
 .servicelist article > span:last-child {
   font-size: 25px;
@@ -814,10 +837,13 @@ h1 em {
   color: var(--paper);
 }
 .process .label,
-.process .sectionhead > p:last-child,
+.process .sectionhead .sectioncopy,
 .steps span,
 .steps p {
   color: #aaa9a2;
+}
+.process .sectionhead h2 {
+  color: var(--paper);
 }
 .steps {
   display: grid;
@@ -945,7 +971,7 @@ h1 em {
   .servicelist article {
     grid-template-columns: 42px 1fr auto;
     gap: 14px;
-    min-height: 140px;
+    min-height: 180px;
   }
   .servicelist h3 {
     font-size: 25px;

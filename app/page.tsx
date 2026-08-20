@@ -3,18 +3,21 @@ const wa =
 const services = [
   [
     "01",
-    "Sistemas internos",
-    "Fluxos, permissões e informações da sua operação reunidos em um único lugar.",
+    "Operação que flui",
+    "Sistemas internos que centralizam pedidos, aprovações, equipes e regras no mesmo ritmo da sua empresa.",
+    "Menos retrabalho. Mais avanço.",
   ],
   [
     "02",
-    "Painéis e indicadores",
-    "Visibilidade para tomar decisões com dados claros, no ritmo da sua empresa.",
+    "Clareza para decidir",
+    "Painéis e relatórios que transformam dados espalhados em contexto para agir com segurança.",
+    "O dado certo, na hora certa.",
   ],
   [
     "03",
-    "Portais e plataformas",
-    "Experiências digitais úteis para clientes, parceiros e equipes.",
+    "Portais que aproximam",
+    "Plataformas para clientes, parceiros e equipes resolverem o que importa em uma experiência só.",
+    "Menos idas e vindas. Mais autonomia.",
   ],
 ];
 const steps = [
@@ -120,17 +123,23 @@ export default function Home() {
       <section className="servicearea" id="servicos">
         <div className="wrap sectionhead">
           <p className="label">O que eu construo</p>
-          <p>
-            Produtos digitais que eliminam ruído e deixam a operação mais leve.
+          <h2>
+            Transformo rotina complexa em produto que a equipe realmente quer
+            usar.
+          </h2>
+          <p className="sectioncopy">
+            Cada solução nasce da operação real: do que hoje toma tempo, gera
+            dúvida ou impede a empresa de avançar.
           </p>
         </div>
         <div className="wrap servicelist">
-          {services.map(([n, t, d]) => (
+          {services.map(([n, t, d, detail]) => (
             <article key={n}>
               <span>{n}</span>
               <div>
                 <h3>{t}</h3>
                 <p>{d}</p>
+                <strong>{detail}</strong>
               </div>
               <Arrow />
             </article>
@@ -140,7 +149,8 @@ export default function Home() {
       <section className="wrap projects" id="trabalho">
         <div className="sectionhead">
           <p className="label">Projetos selecionados</p>
-          <p>
+          <h2>Produtos digitais com impacto visível no dia a dia.</h2>
+          <p className="sectioncopy">
             Uma amostra de produtos que já saíram da ideia para resolver
             problemas reais.
           </p>
@@ -176,7 +186,8 @@ export default function Home() {
         <div className="wrap">
           <div className="sectionhead">
             <p className="label">Como acontece</p>
-            <p>
+            <h2>Do problema à primeira entrega, sem caixa-preta.</h2>
+            <p className="sectioncopy">
               Um processo próximo, transparente e orientado ao que realmente
               importa.
             </p>
