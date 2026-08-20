@@ -157,7 +157,7 @@ export default function Home() {
         </div>
         <div className="projectgrid">
           <Project
-            title="VEREDA"
+            title="Meu Vereda"
             kind="Organização pessoal"
             description="Uma experiência digital que reúne planos, rotina e finanças para tornar o caminho mais claro."
             n="01"
