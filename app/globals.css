@@ -714,7 +714,7 @@ h1 em {
 }
 .projectgrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 26px;
 }
 .project {
@@ -723,6 +723,9 @@ h1 em {
 }
 .project:nth-child(2) {
   background: #dfddd6;
+}
+.project:nth-child(3) {
+  background: #e7e5dc;
 }
 .screen {
   height: 330px;
@@ -930,7 +933,7 @@ h1 em {
     font-size: 25px;
   }
   .projectgrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .screen {
     height: 280px;
@@ -953,6 +956,9 @@ h1 em {
   }
 }
 @media (max-width: 460px) {
+  .projectgrid {
+    grid-template-columns: 1fr;
+  }
   h1 {
     font-size: 55px;
   }

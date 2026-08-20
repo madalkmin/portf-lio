@@ -152,7 +152,7 @@ export default function Home() {
             description="Uma plataforma criada para transformar a gestão de preços em uma rotina mais rápida e confiável."
             n="01"
             href="https://vlprice.com/app"
-            image="/projects/vlprice.png"
+            image="projects/vlprice.png"
           />
           <Project
             title="VLFLOW"
@@ -160,7 +160,15 @@ export default function Home() {
             description="Um sistema sob medida para dar fluidez, acompanhamento e controle ao dia a dia."
             n="02"
             href="https://vlflow.com.br/v1/"
-            image="/projects/vlflow.png"
+            image="projects/vlflow.png"
+          />
+          <Project
+            title="VEREDA"
+            kind="Organização pessoal"
+            description="Uma experiência digital que reúne planos, rotina e finanças para tornar o caminho mais claro."
+            n="03"
+            href="https://vereda-three.vercel.app/"
+            image="projects/vereda.png"
           />
         </div>
       </section>
