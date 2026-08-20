@@ -147,28 +147,28 @@ export default function Home() {
         </div>
         <div className="projectgrid">
           <Project
+            title="VEREDA"
+            kind="Organização pessoal"
+            description="Uma experiência digital que reúne planos, rotina e finanças para tornar o caminho mais claro."
+            n="01"
+            href="https://vereda-three.vercel.app/"
+            image="projects/vereda.png"
+          />
+          <Project
             title="VLPRICE"
             kind="Inteligência de preços"
             description="Uma plataforma criada para transformar a gestão de preços em uma rotina mais rápida e confiável."
-            n="01"
+            n="02"
             href="https://vlprice.com/app"
             image="projects/vlprice.png"
           />
           <Project
             title="VLFLOW"
             kind="Operação organizada"
-            description="Um sistema sob medida para dar fluidez, acompanhamento e controle ao dia a dia."
-            n="02"
+            description="Um sistema sob medida para dar fluidez a transportadoras, acompanhamento e controle ao dia a dia."
+            n="03"
             href="https://vlflow.com.br/v1/"
             image="projects/vlflow.png"
-          />
-          <Project
-            title="VEREDA"
-            kind="Organização pessoal"
-            description="Uma experiência digital que reúne planos, rotina e finanças para tornar o caminho mais claro."
-            n="03"
-            href="https://vereda-three.vercel.app/"
-            image="projects/vereda.png"
           />
         </div>
       </section>
