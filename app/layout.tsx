@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 export const metadata: Metadata = {
+  metadataBase: new URL("https://madalkmin.github.io/portf-lio"),
   title: "Matheus D'Alkmin — Sistemas web",
   description: "Sistemas web sob medida para empresas.",
   openGraph: {
