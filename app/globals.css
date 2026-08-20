@@ -726,29 +726,33 @@ h1 em {
 }
 .screen {
   height: 330px;
-  padding: 20px;
-  background: var(--blue);
+  overflow: hidden;
+  padding: 0;
+  background: var(--ink);
   position: relative;
 }
 .project:nth-child(2) .screen {
-  background: var(--red);
+  background: var(--ink);
 }
 .screen:after {
-  content: "";
-  position: absolute;
-  inset: 20% 18%;
-  background: #f7f5f0;
-  box-shadow: 13px 14px #0002;
-  transform: rotate(-4deg);
-}
-.project:nth-child(2) .screen:after {
-  transform: rotate(4deg);
+  display: none;
 }
 .screen > b {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  left: 14px;
+  padding: 7px;
+  color: var(--paper);
+  background: #1a1b1baa;
   font: 500 11px "DM Mono";
 }
-.screen i {
-  display: none;
+.screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .projectinfo {
   display: flex;

@@ -147,16 +147,20 @@ export default function Home() {
         </div>
         <div className="projectgrid">
           <Project
-            title="VLPrice"
+            title="VLPRICE"
             kind="Inteligência de preços"
             description="Uma plataforma criada para transformar a gestão de preços em uma rotina mais rápida e confiável."
             n="01"
+            href="https://vlprice.com/app"
+            image="/projects/vlprice.png"
           />
           <Project
-            title="VLFlow"
+            title="VLFLOW"
             kind="Operação organizada"
             description="Um sistema sob medida para dar fluidez, acompanhamento e controle ao dia a dia."
             n="02"
+            href="https://vlflow.com.br/v1/"
+            image="/projects/vlflow.png"
           />
         </div>
       </section>
@@ -223,27 +227,33 @@ function Project({
   kind,
   description,
   n,
+  href,
+  image,
 }: {
   title: string;
   kind: string;
   description: string;
   n: string;
+  href: string;
+  image: string;
 }) {
   return (
     <article className="project">
       <div className="screen">
         <b>{n}</b>
-        <i />
-        <i />
-        <i />
-        <i />
+        <img src={image} alt={`Tela da plataforma ${title}`} />
       </div>
       <div className="projectinfo">
         <div>
           <p>{kind}</p>
           <h3>{title}</h3>
         </div>
-        <a href={wa} target="_blank" rel="noreferrer">
+        <a
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`Abrir ${title}`}
+        >
           <Arrow />
         </a>
       </div>
