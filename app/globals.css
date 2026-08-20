@@ -80,7 +80,9 @@ main > .process {
     transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-main > .is-visible {
+main > section:not(.hero).is-visible,
+main > .servicearea.is-visible,
+main > .process.is-visible {
   opacity: 1;
   transform: none;
 }
